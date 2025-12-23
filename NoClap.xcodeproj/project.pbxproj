@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1A98CA192EDCF30D00225C09 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1A98CA182EDCF30D00225C09 /* AudioKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1A98C9FB2EDBA2DD00225C09 /* NoClap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoClap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A98CA192EDCF30D00225C09 /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = NoClap;
 			packageProductDependencies = (
+				1A98CA182EDCF30D00225C09 /* AudioKit */,
 			);
 			productName = NoClap;
 			productReference = 1A98C9FB2EDBA2DD00225C09 /* NoClap.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 1A98C9F22EDBA2DD00225C09;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1A98CA172EDCF30D00225C09 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1A98C9FC2EDBA2DD00225C09 /* Products */;
 			projectDirPath = "";
@@ -255,6 +264,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NoClap/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "No Clap";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -285,6 +297,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NoClap/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "No Clap";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -325,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A98CA172EDCF30D00225C09 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A98CA182EDCF30D00225C09 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A98CA172EDCF30D00225C09 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A98C9F32EDBA2DD00225C09 /* Project object */;
 }
